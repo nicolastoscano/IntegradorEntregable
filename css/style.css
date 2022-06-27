@@ -54,6 +54,10 @@ p {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .number {
     display: flex;
@@ -148,22 +152,39 @@ p {
 }
 
 .footstyle {
+    background-color: #1E1E26;
 
 }
 
 .linkssection {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 50px 20px 50px;
     height: 20vh;
 }
 
 .links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    line-height: 2;
 }
 
+.whitelink {
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0px;
+}
 
 
 
