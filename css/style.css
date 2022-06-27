@@ -14,7 +14,6 @@ button {
     background-color: #F3603B;
     border-radius: 50px;
     height: 45px;
-    width: 130px;
     border: none;
     padding: 20px;
     margin: 10px;
@@ -46,6 +45,7 @@ h2 {
 
 h3 {
     font-size: 15px;
+    font-weight: 600;
 }
 
 p {
@@ -58,6 +58,12 @@ a {
     text-decoration: none;
 }
 
+input {
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+    width: 220px;
+}
 
 .number {
     display: flex;
@@ -141,7 +147,7 @@ a {
 
 .footstyle {
     background-color: #1E1E26;
-
+    padding-top: 30px;
 }
 
 .linkssection {
@@ -174,6 +180,11 @@ a {
     margin: 0px;
 }
 
+.formstyle {
+    display: flex;
+    justify-content: center;
+}
+
 /* Carousel */
 
 .container{
@@ -194,7 +205,7 @@ a {
 
 .item {
     display: inline-block;
-    width: 340px;
+    width: 335px;
     margin: 0 10px;
     height: 100%;
     position: relative;
@@ -213,3 +224,6 @@ a {
 .pp {
     width: 100px;
 }
+
+
+@media (min-width: )
