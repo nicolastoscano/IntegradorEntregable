@@ -56,9 +56,9 @@ h3 {
 }
 
 p {
-    margin: 15px;
     color: #B3B2B7;
     line-height: 1.5;
+    padding: 20px;
 }
 
 input {
@@ -72,9 +72,6 @@ section {
     width: 100%;
     max-width: 1440px;
 }
-
-
-
 
 .pagecenter {
     display: flex;
@@ -108,6 +105,25 @@ section {
     font-weight: 600;
 }
 
+.mrg {
+    margin-bottom: 30px;
+}
+
+.whitetext {
+    color: #FAFAFA;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0px;
+}
+
+/* Header */
 .navstyle {
     display: flex;
     align-items: center;
@@ -118,6 +134,7 @@ section {
     width: 100%;
 }
 
+/* Section1 */
 .section1 {
     display: flex;
     flex-direction: column;
@@ -131,6 +148,7 @@ section {
     text-align: center;
 }
 
+/* Section2 */
 .diftitle {
     display: flex;
     align-items: center;
@@ -140,12 +158,14 @@ section {
     margin-left: 10px;
 }
 
-.imgstyle {
+/* Start section */
+.sectioncenter {
+    display: flex;
+    justify-content: center;
     width: 100%;
-}
-
-.mrg {
-    margin-bottom: 50px;
+    background-color: #F3603B;
+    background-image: url('../imagenes/bg-simplify-section-mobile.svg');
+    background-repeat: no-repeat;
 }
 
 .start {
@@ -156,11 +176,8 @@ section {
     justify-content: center;
 }
 
-.sectioncenter {
-    display: flex;
-    justify-content: center;
+.imgstyle {
     width: 100%;
-    background-color: #F3603B;
 }
 
 .button2 {
@@ -178,28 +195,12 @@ section {
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-.whitetext {
-    color: #FAFAFA;
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    margin: 0px;
-}
-
-
-
 /* Carousel */
-
 .container{
     width: 100%;
     display: block;
     overflow: hidden;
+    margin-top: 20px;
 }
 .carousel{
     display:block;
@@ -231,10 +232,12 @@ section {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .pp {
     width: 100px;
+    margin-bottom: 30px;
 }
 
 
@@ -296,9 +299,6 @@ section {
 .notmobile {
     display: none;
 }
-.order {
-
-}
 
 
 @media (min-width: 760px) {
@@ -313,7 +313,7 @@ section {
     .section1 {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
     .imgstyle {
@@ -323,13 +323,34 @@ section {
     .card1 {
         width: 50vh;
         text-align: left;
-        margin-right: 50px;
     }
     button {
         align-self: flex-start;
     }
 
+    /* Section2 */
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .mrg {
+        width: 50vh;
+    }
+    h2 {
+        text-align: left;
+    }
+    .diftitle {
+        background-color: #FAFAFA;
+    }
+    .desk {
+        margin-left: 70px;
+    }
+
     /* Seccion start now */
+    .sectioncenter {
+        background-image: url('../imagenes/bg-simplify-section-desktop.svg');
+    }
     .start {
         flex-direction: row;
         align-items: center;
@@ -350,7 +371,9 @@ section {
     .fullcarousel {
         max-width: fit-content;
     }
-
+    .comenttitle {
+        text-align: center;
+    }
 
     /* Footer */
     .notmobile {
@@ -374,6 +397,8 @@ section {
         flex-direction: column-reverse;
         max-width: 300px;
     }
+    
+
 
 }
 
