@@ -6,6 +6,8 @@
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #FAFAFA;
+    background-image: url('../imagenes/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
 }
 
 button {
@@ -16,7 +18,7 @@ button {
     height: 45px;
     border: none;
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -42,7 +44,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h2 {
@@ -59,13 +61,6 @@ p {
     color: #B3B2B7;
     line-height: 1.5;
     padding: 20px;
-}
-
-input {
-    border-radius: 30px;
-    border: none;
-    margin: 10px;
-    width: 220px;
 }
 
 section {
@@ -123,7 +118,7 @@ section {
     margin: 0px;
 }
 
-/* Header */
+/* Header mobile*/
 .navstyle {
     display: flex;
     align-items: center;
@@ -189,7 +184,6 @@ section {
     width: 130px;
     border: none;
     padding: 20px;
-    margin: 10px;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -202,6 +196,7 @@ section {
     overflow: hidden;
     margin-top: 20px;
 }
+
 .carousel{
     display:block;
     width: 100%;
@@ -231,7 +226,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
     padding: 20px;
 }
 
@@ -240,8 +234,6 @@ section {
     margin-bottom: 30px;
 }
 
-
-
 /* Footer */
 .footstyle {
     background-color: #1E1E26;
@@ -249,33 +241,51 @@ section {
     display: flex;
     justify-content: center;    
 }
+
 .linkssection {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px 20px 50px;
     height: 20vh;
 }
+
 .links {
     display: flex;
     flex-direction: column;
     line-height: 2;
 }
+
 .whitelink {
     color: #FAFAFA;
     text-decoration: none;
 }
+
 .whitelink:hover {
     color: #F3603B;
 }
+
 .social {
     display: flex;
     justify-content: space-between;
     margin: 30px;
 }
+
 .formstyle {
     display: flex;
     justify-content: center;
 }
+
+input {
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+    width: 220px;
+}
+
+.notshow {
+    display: none;
+}
+
 .footflex {
     display: flex;
     align-items: center;
@@ -283,9 +293,16 @@ section {
     width: 100%;
 }
 
+i {
+    color: #FAFAFA;
+    font-size: 25px;
+}
+i:hover {
+    color: #F3603B;
+    cursor: pointer;
+}
 
-
-/* media */
+/* Header desk */
 
 .navbar {
     display: flex;
@@ -296,6 +313,7 @@ section {
 .navbar:hover {
     color: #F3603B;
 }
+
 .notmobile {
     display: none;
 }
@@ -307,25 +325,37 @@ section {
     .navbar {
         display: contents;
     }
+
     .menu {
         display: none;
     }
+
     .section1 {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
     .imgstyle {
         order: 1;
         width: 50vh;
     }
+
     .card1 {
         width: 50vh;
         text-align: left;
+        padding: 0%;
     }
-    button {
+
+    .button1 {
         align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+
+    p {
+        padding: 20px 0px 0px 0px;
     }
 
     /* Section2 */
@@ -333,32 +363,45 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin: 40px 0px 40px 0px;
     }
+    
     .mrg {
         width: 50vh;
     }
+
     h2 {
         text-align: left;
     }
+
     .diftitle {
         background-color: #FAFAFA;
     }
+
     .desk {
-        margin-left: 70px;
+        margin-left: 90px;
+    }
+
+    /* Carousel */
+    .container:hover {
+        overflow-x: scroll;
     }
 
     /* Seccion start now */
     .sectioncenter {
         background-image: url('../imagenes/bg-simplify-section-desktop.svg');
     }
+
     .start {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
     .button2 {
         align-self: center;
     }
+
     .whitetext {
         width: 50vh;
         text-align: left;
@@ -366,11 +409,13 @@ section {
 
     /* Carousel */
     .item {
-        width: 60vh;
+        wid
+        th: 60vh;
     }
     .fullcarousel {
         max-width: fit-content;
     }
+
     .comenttitle {
         text-align: center;
     }
@@ -379,26 +424,32 @@ section {
     .notmobile {
         display: contents;
     }
+
     .order {
         order: 2;
     }
+
     .notdesk {
         display: none;
     }
+
     .footflex {
         flex-direction: row;
     }
+
     .linkssection {
         order: 1;
         justify-content: space-evenly;
     }
+
     .reverse {
         display: flex;
         flex-direction: column-reverse;
         max-width: 300px;
     }
-    
 
-
+    .formbutton {
+        margin: 10px;
+    }
 }
 
